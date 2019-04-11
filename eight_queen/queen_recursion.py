@@ -18,10 +18,8 @@ def conflict(y, state):
 #                     yield (i,) + result
 
 def queens(num=4, state=()):
-    if len(state) == num -1:
-        for i in range(num):
-            if not conflict(i, state):
-                yield state + (i,)
+    if len(state) == num:
+        yield state
     else:
         for i in range(num):
             if not conflict(i, state):
