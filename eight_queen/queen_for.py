@@ -21,3 +21,5 @@ def queens():
                                     state.append(i)
                                     print(state)
 queens()
+
+这种写法是错误的，每次for循环都要情况state。
